@@ -44,12 +44,14 @@ const IconWrapper = styled.div<{}>({
 export default function SearchBar({
   value,
   onChange,
-}: {|
+  dataTestId,
+}: {
   value: string,
   onChange: (string) => void,
-|}) {
+  dataTestId: string,
+}) {
   return (
-    <InputWrapper>
+    <InputWrapper data-testid={dataTestId}>
       <IconWrapper>
         <MagnifyingGlass size={ICON_SIZE} />
       </IconWrapper>

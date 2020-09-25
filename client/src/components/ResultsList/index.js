@@ -14,6 +14,7 @@ import Checkbox from 'src/components/Checkbox';
 import MasonryLayout from 'src/components/MasonryLayout';
 import { HStack, HSpacer, VStack, VSpacer } from 'src/components/Stack';
 import { BASE_UNIT, colors, fontSize, fontWeight } from 'src/styles';
+import type { FlickrResults } from 'src/types/flickr';
 import { getAuthor, getDate } from 'src/utils/flickr';
 import { useWindowDimensions } from 'src/utils/hooks';
 
@@ -35,6 +36,7 @@ function NoResults({ searchTerm }: {| searchTerm: string |}) {
         padding: 8 * BASE_UNIT,
         textAlign: 'center',
       }}
+      data-testid="ResultsList-no-results"
     >
       <Title>
         Sorry, we couldn&#39;t find any matches for &#39;{searchTerm}&#39;
@@ -60,12 +62,17 @@ const CardWrapper = styled.a<{}>({
   mozAppearance: 'none',
 });
 
+const FilterTags = styled.div<{}>({
+  color: colors.grey90,
+  fontWeight: fontWeight.semibold,
+});
+
 export default function ResultsList({
   searchTerm,
   results,
 }: {|
   searchTerm: string,
-  results: Array<any>,
+  results: FlickrResults,
 |}) {
   const { width: windowWidth } = useWindowDimensions();
   const [numberOfCols, setNumberOfCols] = React.useState(
@@ -87,7 +94,7 @@ export default function ResultsList({
     <VStack>
       <Checkbox
         value={showTags}
-        onChange={() => setShowTags(!showTags)}
+        onChange={() => setShowTags((s) => !s)}
         text="Show tags"
       />
       <VSpacer height={4 * BASE_UNIT} />
@@ -97,7 +104,7 @@ export default function ResultsList({
         colWidth={CARD_WIDTH}
       >
         {results.map((item) => {
-          const author = getAuthor({ author: item.author });
+          const author = getAuthor(item.author);
           return (
             <CardWrapper key={item.link} href={item.link} target="_blank">
               <Card>
@@ -106,10 +113,17 @@ export default function ResultsList({
                     <Avatar>{author[0].toUpperCase()}</Avatar>
                     <HSpacer width={16} />
                     <VStack>
-                      <div css={{ color: colors.grey }}>{author}</div>
-                      <VSpacer height={4} />
+                      <div
+                        css={{
+                          color: colors.grey,
+                          overflowWrap: 'anywhere',
+                        }}
+                      >
+                        {author}
+                      </div>
+                      <VSpacer height={BASE_UNIT} />
                       <div css={{ color: colors.grey90 }}>
-                        {getDate({ published: item.published })}
+                        {getDate(item.published)}
                       </div>
                     </VStack>
                   </HStack>
@@ -124,14 +138,7 @@ export default function ResultsList({
                   {showTags && (
                     <React.Fragment>
                       <VSpacer height={3 * BASE_UNIT} />
-                      <div
-                        css={{
-                          color: colors.grey90,
-                          fontWeight: fontWeight.semibold,
-                        }}
-                      >
-                        Tags:
-                      </div>
+                      <FilterTags>Tags:</FilterTags>
                       <VSpacer height={BASE_UNIT} />
                       <div>{item.tags.split(' ').join(', ')}</div>
                     </React.Fragment>

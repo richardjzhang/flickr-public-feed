@@ -7,8 +7,9 @@
     "cors": "^2.8.5",
     "express": "^4.17.1"
   },
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "heroku-postbuild": "yarn install --only=dev && yarn install && yarn build"
+    "heroku-postbuild": "cd client && yarn install --only=dev && yarn install && yarn build"
   }
 }

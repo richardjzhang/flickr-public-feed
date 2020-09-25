@@ -10,30 +10,17 @@ export function VStack(props: any) {
   return <div css={{ display: 'flex', flexDirection: 'column' }} {...props} />;
 }
 
-export function VSpacer({
-  height = 30,
-  grow = false,
-}: {
-  height?: number,
-  grow?: boolean,
-}) {
-  return <div css={{ height, flexShrink: 0, ...(grow ? { flex: 1 } : {}) }} />;
+export function VSpacer({ height = 30 }: { height?: number }) {
+  return <div css={{ height, flexShrink: 0 }} />;
 }
 
-export function HSpacer({
-  width = 30,
-  grow = false,
-}: {
-  width?: number,
-  grow?: boolean,
-}) {
+export function HSpacer({ width = 30 }: { width?: number }) {
   return (
     <div
       css={{
         width,
         flexShrink: 0,
         display: 'inline-block',
-        ...(grow ? { flex: 1 } : {}),
       }}
     />
   );

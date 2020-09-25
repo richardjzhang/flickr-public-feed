@@ -54,7 +54,12 @@ export default function MasonryLayout({
   return (
     <FlexGrid gap={gap}>
       {[...Array(numberOfCols)].map((_, index) => (
-        <Col key={index} gap={gap} width={colWidth}>
+        <Col
+          key={index}
+          gap={gap}
+          width={colWidth}
+          data-testid={`MasonryLayout-Column-${index}`}
+        >
           {cols[index]}
         </Col>
       ))}

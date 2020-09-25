@@ -6,14 +6,17 @@ import { HStack, HSpacer } from 'src/components/Stack';
 import { BASE_UNIT, colors, fontSize, fontWeight } from 'src/styles';
 
 const CheckboxStyle = styled.input<{}>({
+  height: 4 * BASE_UNIT,
+  width: 4 * BASE_UNIT,
   borderRadius: BASE_UNIT,
   backgroundColor: colors.white,
   margin: 0,
+  cursor: 'pointer',
 });
 
 const Text = styled.div<{}>({
-  color: colors.grey10,
-  fontSize: fontSize.small,
+  color: colors.grey,
+  fontSize: fontSize.medium,
   fontWeight: fontWeight.semibold,
 });
 
@@ -27,9 +30,17 @@ export default function Checkbox({
   text: string,
 |}) {
   return (
-    <HStack css={{ alignItems: 'center' }}>
-      <CheckboxStyle type="checkbox" value={value} onChange={onChange} />
-      <HSpacer width={BASE_UNIT} />
+    <HStack
+      css={{
+        alignItems: 'center',
+        padding: `${2 * BASE_UNIT}px ${4 * BASE_UNIT}px`,
+        width: 'fit-content',
+        backgroundColor: colors.white,
+        borderRadius: BASE_UNIT,
+      }}
+    >
+      <CheckboxStyle type="checkbox" checked={value} onChange={onChange} />
+      <HSpacer width={2 * BASE_UNIT} />
       <Text>{text}</Text>
     </HStack>
   );

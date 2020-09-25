@@ -1,10 +1,10 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 
-import App from './App';
+import PublicFeed from '.';
 
-test('renders App', () => {
-  const { getByTestId } = render(<App />);
+test('renders PublicFeed', () => {
+  const { getByTestId } = render(<PublicFeed />);
   const logo = getByTestId('Logo-svg');
   const searchBar = getByTestId('PublicFeed-search-bar');
   expect(logo).toBeInTheDocument();

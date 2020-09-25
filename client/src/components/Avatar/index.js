@@ -1,9 +1,9 @@
 // @flow strict
-
 import styled from '@emotion/styled';
+import * as React from 'react';
 import { colors, fontSize } from 'src/styles';
 
-const Avatar = styled.div<{}>({
+const AvatarStyle = styled.div<{}>({
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
@@ -17,4 +17,6 @@ const Avatar = styled.div<{}>({
   borderRadius: '50%',
 });
 
-export default Avatar;
+export default function Avatar({ children }: {| children: React$Node |}) {
+  return <AvatarStyle>{children}</AvatarStyle>;
+}

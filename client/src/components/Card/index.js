@@ -3,8 +3,12 @@ import styled from '@emotion/styled';
 import * as React from 'react';
 import { BASE_UNIT, colors, fontSize } from 'src/styles';
 
+type CommonProps = {|
+  children: React$Node,
+|};
+
 const CARD_PADDING = 3 * BASE_UNIT;
-export const Card = styled.div<{}>({
+const CardStyle = styled.div<{}>({
   width: 300,
   display: 'flex',
   flexDirection: 'column',
@@ -20,12 +24,18 @@ export const Card = styled.div<{}>({
     transform: 'scale(1.05)',
   },
 });
+export function Card({ children }: CommonProps) {
+  return <CardStyle>{children}</CardStyle>;
+}
 
-export const CardHeader = styled.div<{}>({
+const CardHeaderStyle = styled.div<{}>({
   padding: CARD_PADDING,
   display: 'flex',
   alignItems: 'center',
 });
+export function CardHeader({ children }: CommonProps) {
+  return <CardHeaderStyle>{children}</CardHeaderStyle>;
+}
 
 const CardThumbnailStyle = styled.img<{
   height?: number,
@@ -34,7 +44,6 @@ const CardThumbnailStyle = styled.img<{
   height: props.height,
   width: props.width,
 }));
-
 export function CardThumbnail({
   height,
   width,
@@ -48,8 +57,11 @@ export function CardThumbnail({
   return <CardThumbnailStyle height={height} width={width} {...rest} />;
 }
 
-export const CardContent = styled.div<{}>({
+const CardContentStyle = styled.div<{}>({
   padding: CARD_PADDING,
   fontSize: fontSize.small,
   color: colors.grey,
 });
+export function CardContent({ children }: CommonProps) {
+  return <CardContentStyle>{children}</CardContentStyle>;
+}

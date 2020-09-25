@@ -1,0 +1,820 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly renders no results when search returns nothing 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1og332n-NoResults"
+        data-testid="ResultsList-no-results"
+      >
+        <div
+          class="css-pxqx0m"
+        >
+          Sorry, we couldn't find any matches for '
+          weofiwe
+          '
+        </div>
+        <div
+          class="css-3scvxm-VSpacer"
+        />
+        <div
+          class="css-epdson"
+        >
+          Please try searching with another term
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1og332n-NoResults"
+      data-testid="ResultsList-no-results"
+    >
+      <div
+        class="css-pxqx0m"
+      >
+        Sorry, we couldn't find any matches for '
+        weofiwe
+        '
+      </div>
+      <div
+        class="css-3scvxm-VSpacer"
+      />
+      <div
+        class="css-epdson"
+      >
+        Please try searching with another term
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders correctly renders no results when there is no search 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-1og332n-NoResults"
+        data-testid="ResultsList-no-results"
+      >
+        <div
+          class="css-pxqx0m"
+        >
+          Sorry, we couldn't find any matches for '
+          
+          '
+        </div>
+        <div
+          class="css-3scvxm-VSpacer"
+        />
+        <div
+          class="css-epdson"
+        >
+          Please try searching with another term
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-1og332n-NoResults"
+      data-testid="ResultsList-no-results"
+    >
+      <div
+        class="css-pxqx0m"
+      >
+        Sorry, we couldn't find any matches for '
+        
+        '
+      </div>
+      <div
+        class="css-3scvxm-VSpacer"
+      />
+      <div
+        class="css-epdson"
+      >
+        Please try searching with another term
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`renders correctly renders results when search returns something 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="css-ebhb4y-VStack"
+      >
+        <div
+          class="css-1crab1l-Checkbox"
+        >
+          <input
+            class="css-1xr1lj7"
+            type="checkbox"
+          />
+          <div
+            class="css-1rnx2nk-HSpacer"
+          />
+          <div
+            class="css-u4h7m5"
+          >
+            Show tags
+          </div>
+        </div>
+        <div
+          class="css-3scvxm-VSpacer"
+        />
+        <div
+          class="css-1a8sdri"
+        >
+          <div
+            class="css-jnid37"
+            data-testid="MasonryLayout-Column-0"
+            width="300"
+          >
+            <a
+              class="css-aicwwk"
+              href="https://www.flickr.com/photos/martinzt/50388183063/"
+              target="_blank"
+            >
+              <div
+                class="css-1c535gx"
+              >
+                <div
+                  class="css-9v8cyb"
+                >
+                  <div
+                    class="css-1o4uhv2-HStack"
+                  >
+                    <div
+                      class="css-1n49xm3"
+                    >
+                      M
+                    </div>
+                    <div
+                      class="css-35lhvg-HSpacer"
+                    />
+                    <div
+                      class="css-ebhb4y-VStack"
+                    >
+                      <div
+                        class="css-14bxiw3"
+                      >
+                        MartinZT
+                      </div>
+                      <div
+                        class="css-1uhajun-VSpacer"
+                      />
+                      <div
+                        class="css-1ssvqp4"
+                      >
+                        27 Sep, 2020
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  alt="2020_09_Salon_Prive_075"
+                  class="css-1v5z18m"
+                  src="https://live.staticflickr.com/65535/50388183063_4eb10be552_m.jpg"
+                  width="300"
+                />
+                <div
+                  class="css-1occhsy"
+                >
+                  <div>
+                    2020_09_Salon_Prive_075
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="css-6gf715-VSpacer"
+            />
+            <a
+              class="css-aicwwk"
+              href="https://www.flickr.com/photos/183582427@N05/50388895711/"
+              target="_blank"
+            >
+              <div
+                class="css-1c535gx"
+              >
+                <div
+                  class="css-9v8cyb"
+                >
+                  <div
+                    class="css-1o4uhv2-HStack"
+                  >
+                    <div
+                      class="css-1n49xm3"
+                    >
+                      M
+                    </div>
+                    <div
+                      class="css-35lhvg-HSpacer"
+                    />
+                    <div
+                      class="css-ebhb4y-VStack"
+                    >
+                      <div
+                        class="css-14bxiw3"
+                      >
+                        marian.pile
+                      </div>
+                      <div
+                        class="css-1uhajun-VSpacer"
+                      />
+                      <div
+                        class="css-1ssvqp4"
+                      >
+                        27 Sep, 2020
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  alt="Swindon Supermarine v Tiverton Town"
+                  class="css-1v5z18m"
+                  src="https://live.staticflickr.com/65535/50388895711_2703821a44_m.jpg"
+                  width="300"
+                />
+                <div
+                  class="css-1occhsy"
+                >
+                  <div>
+                    Swindon Supermarine v Tiverton Town
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="css-6gf715-VSpacer"
+            />
+          </div>
+          <div
+            class="css-jnid37"
+            data-testid="MasonryLayout-Column-1"
+            width="300"
+          >
+            <a
+              class="css-aicwwk"
+              href="https://www.flickr.com/photos/martinzt/50388197208/"
+              target="_blank"
+            >
+              <div
+                class="css-1c535gx"
+              >
+                <div
+                  class="css-9v8cyb"
+                >
+                  <div
+                    class="css-1o4uhv2-HStack"
+                  >
+                    <div
+                      class="css-1n49xm3"
+                    >
+                      M
+                    </div>
+                    <div
+                      class="css-35lhvg-HSpacer"
+                    />
+                    <div
+                      class="css-ebhb4y-VStack"
+                    >
+                      <div
+                        class="css-14bxiw3"
+                      >
+                        MartinZT
+                      </div>
+                      <div
+                        class="css-1uhajun-VSpacer"
+                      />
+                      <div
+                        class="css-1ssvqp4"
+                      >
+                        27 Sep, 2020
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  alt="2020_09_Salon_Prive_005"
+                  class="css-1v5z18m"
+                  src="https://live.staticflickr.com/65535/50388197208_50c0bf8738_m.jpg"
+                  width="300"
+                />
+                <div
+                  class="css-1occhsy"
+                >
+                  <div>
+                    2020_09_Salon_Prive_005
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="css-6gf715-VSpacer"
+            />
+            <a
+              class="css-aicwwk"
+              href="https://www.flickr.com/photos/183582427@N05/50388896216/"
+              target="_blank"
+            >
+              <div
+                class="css-1c535gx"
+              >
+                <div
+                  class="css-9v8cyb"
+                >
+                  <div
+                    class="css-1o4uhv2-HStack"
+                  >
+                    <div
+                      class="css-1n49xm3"
+                    >
+                      M
+                    </div>
+                    <div
+                      class="css-35lhvg-HSpacer"
+                    />
+                    <div
+                      class="css-ebhb4y-VStack"
+                    >
+                      <div
+                        class="css-14bxiw3"
+                      >
+                        marian.pile
+                      </div>
+                      <div
+                        class="css-1uhajun-VSpacer"
+                      />
+                      <div
+                        class="css-1ssvqp4"
+                      >
+                        27 Sep, 2020
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <img
+                  alt="Swindon Supermarine v Tiverton Town"
+                  class="css-1v5z18m"
+                  src="https://live.staticflickr.com/65535/50388896216_d0509390fc_m.jpg"
+                  width="300"
+                />
+                <div
+                  class="css-1occhsy"
+                >
+                  <div>
+                    Swindon Supermarine v Tiverton Town
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div
+              class="css-6gf715-VSpacer"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="css-ebhb4y-VStack"
+    >
+      <div
+        class="css-1crab1l-Checkbox"
+      >
+        <input
+          class="css-1xr1lj7"
+          type="checkbox"
+        />
+        <div
+          class="css-1rnx2nk-HSpacer"
+        />
+        <div
+          class="css-u4h7m5"
+        >
+          Show tags
+        </div>
+      </div>
+      <div
+        class="css-3scvxm-VSpacer"
+      />
+      <div
+        class="css-1a8sdri"
+      >
+        <div
+          class="css-jnid37"
+          data-testid="MasonryLayout-Column-0"
+          width="300"
+        >
+          <a
+            class="css-aicwwk"
+            href="https://www.flickr.com/photos/martinzt/50388183063/"
+            target="_blank"
+          >
+            <div
+              class="css-1c535gx"
+            >
+              <div
+                class="css-9v8cyb"
+              >
+                <div
+                  class="css-1o4uhv2-HStack"
+                >
+                  <div
+                    class="css-1n49xm3"
+                  >
+                    M
+                  </div>
+                  <div
+                    class="css-35lhvg-HSpacer"
+                  />
+                  <div
+                    class="css-ebhb4y-VStack"
+                  >
+                    <div
+                      class="css-14bxiw3"
+                    >
+                      MartinZT
+                    </div>
+                    <div
+                      class="css-1uhajun-VSpacer"
+                    />
+                    <div
+                      class="css-1ssvqp4"
+                    >
+                      27 Sep, 2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="2020_09_Salon_Prive_075"
+                class="css-1v5z18m"
+                src="https://live.staticflickr.com/65535/50388183063_4eb10be552_m.jpg"
+                width="300"
+              />
+              <div
+                class="css-1occhsy"
+              >
+                <div>
+                  2020_09_Salon_Prive_075
+                </div>
+              </div>
+            </div>
+          </a>
+          <div
+            class="css-6gf715-VSpacer"
+          />
+          <a
+            class="css-aicwwk"
+            href="https://www.flickr.com/photos/183582427@N05/50388895711/"
+            target="_blank"
+          >
+            <div
+              class="css-1c535gx"
+            >
+              <div
+                class="css-9v8cyb"
+              >
+                <div
+                  class="css-1o4uhv2-HStack"
+                >
+                  <div
+                    class="css-1n49xm3"
+                  >
+                    M
+                  </div>
+                  <div
+                    class="css-35lhvg-HSpacer"
+                  />
+                  <div
+                    class="css-ebhb4y-VStack"
+                  >
+                    <div
+                      class="css-14bxiw3"
+                    >
+                      marian.pile
+                    </div>
+                    <div
+                      class="css-1uhajun-VSpacer"
+                    />
+                    <div
+                      class="css-1ssvqp4"
+                    >
+                      27 Sep, 2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="Swindon Supermarine v Tiverton Town"
+                class="css-1v5z18m"
+                src="https://live.staticflickr.com/65535/50388895711_2703821a44_m.jpg"
+                width="300"
+              />
+              <div
+                class="css-1occhsy"
+              >
+                <div>
+                  Swindon Supermarine v Tiverton Town
+                </div>
+              </div>
+            </div>
+          </a>
+          <div
+            class="css-6gf715-VSpacer"
+          />
+        </div>
+        <div
+          class="css-jnid37"
+          data-testid="MasonryLayout-Column-1"
+          width="300"
+        >
+          <a
+            class="css-aicwwk"
+            href="https://www.flickr.com/photos/martinzt/50388197208/"
+            target="_blank"
+          >
+            <div
+              class="css-1c535gx"
+            >
+              <div
+                class="css-9v8cyb"
+              >
+                <div
+                  class="css-1o4uhv2-HStack"
+                >
+                  <div
+                    class="css-1n49xm3"
+                  >
+                    M
+                  </div>
+                  <div
+                    class="css-35lhvg-HSpacer"
+                  />
+                  <div
+                    class="css-ebhb4y-VStack"
+                  >
+                    <div
+                      class="css-14bxiw3"
+                    >
+                      MartinZT
+                    </div>
+                    <div
+                      class="css-1uhajun-VSpacer"
+                    />
+                    <div
+                      class="css-1ssvqp4"
+                    >
+                      27 Sep, 2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="2020_09_Salon_Prive_005"
+                class="css-1v5z18m"
+                src="https://live.staticflickr.com/65535/50388197208_50c0bf8738_m.jpg"
+                width="300"
+              />
+              <div
+                class="css-1occhsy"
+              >
+                <div>
+                  2020_09_Salon_Prive_005
+                </div>
+              </div>
+            </div>
+          </a>
+          <div
+            class="css-6gf715-VSpacer"
+          />
+          <a
+            class="css-aicwwk"
+            href="https://www.flickr.com/photos/183582427@N05/50388896216/"
+            target="_blank"
+          >
+            <div
+              class="css-1c535gx"
+            >
+              <div
+                class="css-9v8cyb"
+              >
+                <div
+                  class="css-1o4uhv2-HStack"
+                >
+                  <div
+                    class="css-1n49xm3"
+                  >
+                    M
+                  </div>
+                  <div
+                    class="css-35lhvg-HSpacer"
+                  />
+                  <div
+                    class="css-ebhb4y-VStack"
+                  >
+                    <div
+                      class="css-14bxiw3"
+                    >
+                      marian.pile
+                    </div>
+                    <div
+                      class="css-1uhajun-VSpacer"
+                    />
+                    <div
+                      class="css-1ssvqp4"
+                    >
+                      27 Sep, 2020
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                alt="Swindon Supermarine v Tiverton Town"
+                class="css-1v5z18m"
+                src="https://live.staticflickr.com/65535/50388896216_d0509390fc_m.jpg"
+                width="300"
+              />
+              <div
+                class="css-1occhsy"
+              >
+                <div>
+                  Swindon Supermarine v Tiverton Town
+                </div>
+              </div>
+            </div>
+          </a>
+          <div
+            class="css-6gf715-VSpacer"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
