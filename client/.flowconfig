@@ -1,0 +1,23 @@
+[declarations]
+.*/node_modules/@emotion/.*
+
+[include]
+
+[ignore]
+server.js
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^src/\(.*\)$' -> '<PROJECT_ROOT>/src/\1'
+
+esproposal.optional_chaining=enable
+
+server.max_workers=4
+
+[strict]
+
+[version]
+0.122.0
